@@ -42,6 +42,10 @@ h1, h2, h3, h4 {
     color: hsl(0, 0%, 98%);
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 /* Heading */
 header {
     margin: 0;
@@ -138,4 +142,47 @@ footer {
     color: hsl(0, 0%, 98%);
     min-height: 120px;
     margin: 0;
+}
+
+.cv-pdf i {
+    font-size: 18px;
+    color: hsl(0, 0%, 98%);
+    text-align: center;
+    padding-left: 5px;
+    transition: color .35s ease-in-out;
+    -moz-transition: color .35s ease-in-out;
+    -webkit-transition: color .35s ease-in-out;
+    -o-transition: color .35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+    color: hsl(15, 87%, 49%)
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 56%);
+    transition: color .35s ease-in-out;
+    -moz-transition: color .35s ease-in-out;
+    -webkit-transition: color .35s ease-in-out;
+    -o-transition: color .35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background-color: hsl(15, 87%, 49%)
+}
+
+#footer-details {
+    padding: 20px;
 }
