@@ -23,6 +23,10 @@ html, body {
     background-color: hsl(283, 39%, 53%);
 }
 
+.bg-color-contact {
+    background-color: hsl(0, 0%, 100%);
+}
+
 .ui-menu-color-home {
     background-color: hsl(28, 80%, 52%);
 }
@@ -327,4 +331,35 @@ footer {
 
 .history-items {
     margin-bottom: 30px;
+}
+
+/* Contact form */
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(15, 87%, 49%);
+}
+
+/* Media Queries */
+@media(width >= 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
