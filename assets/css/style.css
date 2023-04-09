@@ -19,7 +19,7 @@ html, body {
     background-color: hsl(0, 0%, 96%);
 }
 
-.bg-color-personal-history {
+.bg-color-work-history {
     background-color: hsl(283, 39%, 53%);
 }
 
@@ -287,4 +287,44 @@ footer {
 .history-heading {
     color: hsl(0, 0%, 98%);
     margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0 2em;
+    position: relative;
+    color: hsl(0, 0%, 98%);
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: 'Exo', sans-serif;
+    font-size: .8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    top: 2.4em;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background-color: hsl(0, 0%, 98%);
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
