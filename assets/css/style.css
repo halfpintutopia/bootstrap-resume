@@ -11,6 +11,10 @@ html, body {
     background-color: hsl(0, 0%, 40%);
 }
 
+.bg-color-three-reasons {
+    background-color: hsl(0, 0%, 100%);
+}
+
 .ui-menu-color-home {
     background-color: hsl(28, 80%, 52%);
 }
@@ -44,6 +48,24 @@ h1, h2, h3, h4 {
 
 .inline-block {
     display: inline-block;
+}
+
+/* General */
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 /* Heading */
