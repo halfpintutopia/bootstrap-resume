@@ -4,6 +4,22 @@
     background-color: hsl(0, 0%, 40%);
 }
 
+.ui-menu-color-home {
+    background-color: hsl(28, 80%, 52%);
+}
+
+.ui-menu-color-resume {
+    background-color: hsl(283, 39%, 53%);
+}
+
+.ui-menu-color-contact {
+    background-color: hsl(205, 70%, 53%);
+}
+
+.ui-menu-color-download {
+    background-color: hsl(0, 0%, 32%);
+}
+
 /* Heading */
 
 header {
@@ -38,4 +54,53 @@ header {
     margin-top: 20px;
     margin-bottom: 90px;
     color: hsl(0, 0%, 100%);
+}
+
+.menu-container {
+    font-size: 0;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+#nav {
+    margin: 0;
+}
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+
+.menu-item {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+
+.menu-item a {
+    width: 100%;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    height: 120px;
+}
+
+.menu-item a i {
+    padding-top: 22px;
+    display: block;
+    color: hsl(0, 0%, 98%);
+    font-size: 26px;
+}
+
+.menu-item span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
