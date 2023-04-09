@@ -104,3 +104,9 @@ header {
     font-weight: 300;
     letter-spacing: 2px;
 }
+
+/* Hover CSS */
+.hvr-sweep-to-bottom:before {
+    height: 120px;
+    background-color: rgba(0,0,0,0.2);
+}
