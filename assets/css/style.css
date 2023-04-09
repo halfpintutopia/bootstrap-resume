@@ -1,5 +1,12 @@
-/* Colors */
+:root {
 
+}
+
+html, body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Colors */
 .bg-color-name-title {
     background-color: hsl(0, 0%, 40%);
 }
@@ -20,8 +27,22 @@
     background-color: hsl(0, 0%, 32%);
 }
 
-/* Heading */
+/* Utilities */
+h1, h2, h3, h4 {
+    margin: 0;
+}
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+    color: hsl(0, 0%, 98%);
+}
+
+/* Heading */
 header {
     margin: 0;
 }
@@ -109,4 +130,12 @@ header {
 .hvr-sweep-to-bottom:before {
     height: 120px;
     background-color: rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background-color: hsl(0, 0%, 32%);
+    color: hsl(0, 0%, 98%);
+    min-height: 120px;
+    margin: 0;
 }
