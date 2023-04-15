@@ -363,3 +363,8 @@ button[type="submit"] {
         max-width: 50%;
     }
 }
+
+/* Google Maps */
+#map {
+    min-height: 360px;
+}
