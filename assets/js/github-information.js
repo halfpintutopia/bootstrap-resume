@@ -41,6 +41,7 @@ function fetchGitHubInformation() {
     `<div id="loader"><img src="assets/css/loader.gif" alt="Loading..."></div>`
   );
 
+  // https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28#list-users
   $.when(
     $.getJSON(`https://api.github.com/users/${username}`),
     $.getJSON(`https://api.github.com/users/${username}/repos`)
