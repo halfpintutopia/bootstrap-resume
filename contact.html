@@ -21,9 +21,8 @@
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
-      (function(){
-        emailjs.init('-xT-yBuAqTI0IWNZ7');
-        emailjs.send("service_24vhpd6","rosie", {name:"Aaron", notes:"The project that I want is..."});
+      (function () {
+        emailjs.init("YOUR_PUBLIC_KEY");
       })();
     </script>
 
@@ -76,18 +75,12 @@
 
                     <div class="center-form">
                         <form onsubmit="return sendMail(this);">
-                            <label for="full-name">
-                                <input type="text" name="name" id="full-name" class="form-control" placeholder="Name"
-                                       required>
-                            </label>
-                            <label for="emailaddress">
-                                <input type="email" name="emailaddress" id="emailaddress" class="form-control"
-                                       placeholder="Email" required>
-                            </label>
-                            <label for="projectsummary">
-                                <textarea name="project-summary" id="projectsummary" rows="5"
-                                          placeholder="Project Description" required></textarea>
-                            </label>
+                            <input type="text" name="name" id="full-name" class="form-control" placeholder="Name"
+                                   required>
+                            <input type="email" name="emailaddress" id="emailaddress" class="form-control"
+                                   placeholder="Email" required>
+                            <textarea name="project-summary" id="projectsummary" rows="5"
+                                      placeholder="Project Description" required></textarea>
                             <div class="form-row text-center">
                                 <div class="col">
                                     <button type="submit" class="btn btn-secondary">Send Project Request</button>
