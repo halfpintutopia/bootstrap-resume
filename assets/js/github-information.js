@@ -27,11 +27,15 @@ function fetchGitHubInformation() {
   );
 
   $.when(
-    $.getJSON(`https://api.github.com/users/${username}`)
+    $.getJSON(`https://api.github.com/users/${username}`),
+    $.getJSON(`https://api.github.com/users/${username}/repos`)
   ).then(
-    function getData(response) {
-      var userData = response;
+    function getData(userResponse, repoResponse) {
+      var userData = userResponse[0];
+      var repoData = repoResponse[0];
+
       $('#gh-user-data').html(userInformationHTML(userData));
+      $('#gh-repo-data').html(repoInformationHTML(repoData));
     }, function getDataError(errorResponse) {
       if (errorResponse.status === 404) {
         $('#gh-user-data').html(`<h2>No info found for user ${username}</h2>`);
