@@ -16,11 +16,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
           type="text/css"/>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("YOUR_PUBLIC_KEY");
+        emailjs.send("service_24vhpd6","rosie", {name:"Aaron", notes:"The project that I want is..."});
+      })();
+    </script>
+
 </head>
 <body>
 <article>
     <header>
-        <!--        <div class="container-fluid">-->
         <div class="row g-0">
             <a href="index.html" class="col-md-4 logo"></a>
             <div class="col md 8">
@@ -55,7 +65,6 @@
                 </div>
             </div>
         </div>
-        <!--        </div>-->
     </header>
     <section class="container-fluid">
         <div class="row bg-color-contact">
